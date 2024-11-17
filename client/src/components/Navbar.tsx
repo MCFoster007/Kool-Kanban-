@@ -8,13 +8,14 @@ const Navbar = () => {
   const checkLogin = () => {
     if(auth.loggedIn()) {
       setLoginCheck(true);
+    } else {
+      setLoginCheck(false);
     }
   };
 
   useEffect(() => {
-    console.log(loginCheck);
     checkLogin();
-  }, [loginCheck])
+  }, []); // Run only once on mount
 
   return (
     <div className='nav'>
