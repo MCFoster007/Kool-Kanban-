@@ -1,5 +1,5 @@
 import { Router, Request, Response } from 'express';
-import { User } from '../models/user.js'; // Replace with your actual User model import
+import { User } from '../models/user.js'; 
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcrypt';
 
@@ -39,6 +39,16 @@ const router = Router();
 
 // POST /login - Login a user
 router.post('/login', login);
+fetch('/login', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ email: 'user@example.com', password: 'password123' }),
+})
+  .then((res) => res.json())
+  .then((data) => {
+    localStorage.setItem('token', data.token); 
+  });
+
 
 export default router;
 
