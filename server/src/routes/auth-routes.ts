@@ -7,11 +7,11 @@ const JWT_SECRET = process.env.JWT_SECRET || 'your_secret_key';
 const JWT_EXPIRATION = '1h'; // Token time
 
 export const login = async (req: Request, res: Response) => {
-  const { email, password } = req.body;
+  const { username, password } = req.body;
 
   try {
     
-    const user = await User.findOne({ where: { email } }); 
+    const user = await User.findOne({ where: { username } }); 
     if (!user) {
       return res.status(401).json({ message: 'Invalid email or password' });
     }
