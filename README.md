@@ -3,11 +3,6 @@
 <div align="center">
 
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Contributors](https://img.shields.io/github/contributors/404pandas/project-2-setup-guide.svg?style=plastic&logo=appveyor)](https://github.com/404pandas/project-2-setup-guide/graphs/contributors)
-[![Forks](https://img.shields.io/github/forks/404pandas/project-2-setup-guide.svg?style=plastic&logo=appveyor)](https://github.com/404pandas/project-2-setup-guide/network/members)
-[![Stargazers](https://img.shields.io/github/stars/404pandas/project-2-setup-guide.svg?style=plastic&logo=appveyor)](https://github.com/404pandas/project-2-setup-guide/stargazers)
-
 
 
 </div>
@@ -17,14 +12,14 @@
   <h3 align="center">MC Foster Portfolio</h3>
 
   <p align="center">
-about app
+About App
 
   <br />
     <a href=""><strong>Explore the docs »</strong></a>
   </p>
 </div>
 
-  [Netlify Deployment]()
+  [Render Deployment](https://kool-kanban.onrender.com) --issues in deployment, however, do 'npm start' in terminal shows the functionality.
 
       
  
@@ -56,17 +51,17 @@ about app
 
 ## About The Project
 
+This project is a Kanban board application with a secure login system. Users authenticate via a login page using JSON Web Tokens (JWT), enabling secure access to manage tasks. The application ensures secure storage of JWTs for authenticated sessions, automatic redirection for unauthorized access, and session expiration after inactivity for enhanced security.
 
-<!-- add about the project  -->
-[walkthru]()
+[Walk-Thru](https://youtu.be/X3BnoY_5Xas)
 
-![first](.png)
+![landing page](./client/public/images/landingpage.png)
 
-![second](..png)
+![login in page](./client/public/images/logininpage.png)
 
-![third](..png)
+![create ticket](./client/public/images/createticket.png)
 
-![fourth](.png)
+![ticket page](./client/public/images/ticketpage.png)
 
 
 This project was built using React, JS
@@ -78,8 +73,16 @@ This project was built using React, JS
 
 [![Javascript](https://img.shields.io/badge/Language-JavaScript-ff0000?style=plastic&logo=JavaScript&logoWidth=10)](https://javascript.info/)
 [![CSS](https://img.shields.io/badge/Language-CSS-ff8000?style=plastic&logo=CSS3&logoWidth=10)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![Node.js](https://img.shields.io/badge/Framework-Node.js-ffff00?style=plastic&logo=Node.js&logoWidth=10)](https://nodejs.org/en/)
+[![Express](https://img.shields.io/badge/Framework-Express-80ff00?style=plastic&logo=Express&logoWidth=10)](https://expressjs.com/)
+[![npm](https://img.shields.io/badge/Tool-npm-00ff00?style=plastic&logo=npm&logoWidth=10)](https://www.npmjs.com/)
 [![VS Code](https://img.shields.io/badge/IDE-VSCode-0000ff?style=plastic&logo=VisualStudioCode&logoWidth=10)](https://code.visualstudio.com/docs)
-[![React](https://img.shields.io/badge/Language-React-ff0000?style=plastic&logo=React&logoWidth=10)](https://react.info/)
+[![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-8000ff?style=plastic&logo=PostgreSQL&logoWidth=10)](https://www.postgresql.org/docs/)
+[![TypeScript](https://img.shields.io/badge/Language-TypeScript-007ACC?style=plastic&logo=typescript&logoWidth=10)](https://www.typescriptlang.org/)
+[![pg](https://img.shields.io/badge/Package-pg-0984e3?style=plastic&logo=postgresql&logoWidth=10)](https://www.npmjs.com/package/pg)
+[![Nodemon](https://img.shields.io/badge/DevDependency-Nodemon-d63031?style=plastic&logo=nodemon&logoWidth=10)](https://www.npmjs.com/package/nodemon)
+[![JWT](https://img.shields.io/badge/Package-JWT-000000?style=plastic&logo=jsonwebtokens&logoWidth=10)](https://jwt.io/)
+
 
 
 </div>
@@ -110,8 +113,10 @@ npm i
 npm run start
 ```
 
-4. It will show running on localhost:3000 in your browser
-
+4. It will show running on 
+```
+localhost:3000 in your browser
+```
 
 #### MVP
 
@@ -122,12 +127,10 @@ npm run start
     - [ ] Routing
     - [ ] Styling
 
-
-#### Future Development
-
-- [ ]
-- [ ]
-- [ ]
+- [ ] Back End
+  - [ ] Models
+  - [ ] Seeds
+  - [ ] Routing
 
 
 ## Contributing
@@ -147,6 +150,8 @@ Don't forget to give the project a star! Thanks again!
 
 ## License
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 This project is licensed under the MIT license.
 
 
@@ -157,17 +162,17 @@ This project is licensed under the MIT license.
 
 Project Links:
 
-[Github Repository](https://github.com/MCFoster007/)
+[Github Repository](https://github.com/MCFoster007/Kool-Kanban-)
 
 [Github Pages Deployment]( https://mcfoster007.github.io//)
 
 
-[Netlify Deployment]()
+[Render Deployment](https://kool-kanban.onrender.com) --issues fyi
 
 
 
 ## Acknowledgments
-Thank my tutors who helped me and guided me.
+Thank my tutors, Mary, Cody, Katie and Dan the instructor who helped me and guided me on the project.
 
 
 

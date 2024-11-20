@@ -7,6 +7,7 @@ export const authenticateToken = (req, res, next) => {
     if (authHeader) {
         const token = authHeader.split(' ')[1];
         const secretKey = process.env.JWT_SECRET_KEY || 'your_secret_key';
+        //because i did an or then i need tjo identify it.  in auth routes 
         jwt.verify(token, secretKey, (err, user) => {
             console.log('verifing token');
             if (err) {

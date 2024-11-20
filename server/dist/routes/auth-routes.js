@@ -3,6 +3,7 @@ import { User } from '../models/user.js';
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcrypt';
 const JWT_SECRET_KEY = process.env.JWT_SECRET_KEY || 'your_secret_key';
+//need tjo put in server auth.ts cuz i have an OR statement
 const JWT_EXPIRATION = '1h'; // Token time
 export const login = async (req, res) => {
     const { username, password } = req.body;
