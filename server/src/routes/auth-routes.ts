@@ -3,7 +3,7 @@ import { User } from '../models/user.js';
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcrypt';
 
-const JWT_SECRET = process.env.JWT_SECRET || 'your_secret_key'; 
+const JWT_SECRET_KEY = process.env.JWT_SECRET_KEY|| 'your_secret_key'; 
 const JWT_EXPIRATION = '1h'; // Token time
 
 export const login = async (req: Request, res: Response) => {
@@ -23,7 +23,7 @@ export const login = async (req: Request, res: Response) => {
     }
 
   
-    const token = jwt.sign({ username: user.username, id: user.id }, JWT_SECRET, {
+    const token = jwt.sign({ username: user.username, id: user.id }, JWT_SECRET_KEY, {
       expiresIn: JWT_EXPIRATION,
     });
 
