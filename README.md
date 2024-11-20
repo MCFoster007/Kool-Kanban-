@@ -22,7 +22,7 @@ About App
   [Render Deployment](https://kool-kanban.onrender.com) --issues in deployment, however, do 'npm start' in terminal shows the functionality.
 
       
- 
+
 <details>
   <summary>Table of Contents</summary>
   <ol>
@@ -167,7 +167,7 @@ Project Links:
 [Github Pages Deployment]( https://mcfoster007.github.io//)
 
 
-[Render Deployment](https://kool-kanban.onrender.com) --issues fyi
+[Render Deployment](https://kool-kanban.onrender.com) --issues FYI
 
 
 
