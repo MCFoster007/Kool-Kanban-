@@ -36,7 +36,7 @@ import { UserLogin } from "../interfaces/UserLogin";
 
 const login = async (userInfo: UserLogin) => {
   try {
-    const response = await fetch('http://localhost:3001/api/login', { // Use the full URL if necessary
+    const response = await fetch('/auth/login', { // Use the full URL if necessary.//changed the api to auth to follow the routes in index.ts
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

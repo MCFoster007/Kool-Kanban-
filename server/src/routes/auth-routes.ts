@@ -4,11 +4,12 @@ import jwt from 'jsonwebtoken';
 import bcrypt from 'bcrypt';
 
 const JWT_SECRET_KEY = process.env.JWT_SECRET_KEY|| 'your_secret_key'; 
+//need tjo put in server auth.ts cuz i have an OR statement
 const JWT_EXPIRATION = '1h'; // Token time
 
 export const login = async (req: Request, res: Response) => {
   const { username, password } = req.body;
-
+// console.log("log in");
   try {
     
     const user = await User.findOne({ where: { username } }); 
@@ -36,25 +37,25 @@ export const login = async (req: Request, res: Response) => {
 };
 
 const router = Router();
-
+router.post ('/login',login)
 // POST /login - Login a user
-fetch('/login', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify({ email: 'user@example.com', password: 'password123' }),
-})
-  .then((res) => {
-    if (!res.ok) {
-      throw new Error('Network response was not ok');
-    }
-    return res.json();
-  })
-  .then((data) => {
-    localStorage.setItem('token', data.token);
-  })
-  .catch((error) => {
-    console.error('Fetch error:', error);
-  });
+// fetch('/login', {
+//   method: 'POST',
+//   headers: { 'Content-Type': 'application/json' },
+//   body: JSON.stringify({ email: 'user@example.com', password: 'password123' }),
+// })
+//   .then((res) => {
+//     if (!res.ok) {
+//       throw new Error('Network response was not ok');
+//     }
+//     return res.json();
+//   })
+//   .then((data) => {
+//     localStorage.setItem('token', data.token);
+//   })
+//   .catch((error) => {
+//     console.error('Fetch error:', error);
+//   });
 
 export default router;
 
