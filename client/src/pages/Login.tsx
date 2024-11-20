@@ -17,12 +17,16 @@ const Login = () => {
     });
   };
 
+  const [ ,setError]= useState('');
+
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     try {
       const data = await login(loginData);
       Auth.login(data.token);
+      setError(''); //clear any existing errors
     } catch (err) {
+      setError ('Invalid username or password');
       console.error('Failed to login', err);
     }
   };
