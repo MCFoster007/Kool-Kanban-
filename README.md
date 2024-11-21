@@ -19,7 +19,7 @@ About App
   </p>
 </div>
 
-  [Render Deployment](https://kool-kanban.onrender.com) --issues in deployment, however, do 'npm start' in terminal shows the functionality.
+  [Render Deployment](https://kool-kanban.onrender.com) 
 
       
 
@@ -167,7 +167,7 @@ Project Links:
 [Github Pages Deployment]( https://mcfoster007.github.io//)
 
 
-[Render Deployment](https://kool-kanban.onrender.com) --issues FYI
+[Render Deployment](https://kool-kanban.onrender.com) 
 
 
 
